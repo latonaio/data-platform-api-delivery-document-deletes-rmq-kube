@@ -9,12 +9,12 @@ spec:
   selector:
     matchLabels:
       run: data-platform-api-delivery-document-deletes-rmq-kube
-      app: ORDERS
+      app: DELIVERY_DOCUMENT
   template:
     metadata:
       labels:
         run: data-platform-api-delivery-document-deletes-rmq-kube
-        app: ORDERS
+        app: DELIVERY_DOCUMENT
     spec:
       hostname: data-platform-api-delivery-document-deletes-rmq-kube
       containers:
