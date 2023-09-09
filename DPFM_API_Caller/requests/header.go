@@ -1,7 +1,7 @@
 package requests
 
 type Header struct {
-	DeliveryDocumentID   int     `json:"DeliveryDocumentID"`
+	DeliveryDocument	 int     `json:"DeliveryDocument"`
 	HeaderDeliveryStatus *string `json:"HeaderDeliveryStatus"`
 	IsMarkedForDeletion  *bool   `json:"IsMarkedForDeletion"`
 }

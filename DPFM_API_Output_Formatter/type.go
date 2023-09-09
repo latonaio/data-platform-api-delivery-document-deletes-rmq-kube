@@ -25,20 +25,18 @@ type SDC struct {
 }
 
 type Message struct {
-	Header *Header `json:"Header"`
-	Item   *[]Item `json:"Item"`
+	Header *[]Header	`json:"Header"`
+	Item   *[]Item		`json:"Item"`
 }
 
 type Header struct {
 	DeliveryDocument     int     `json:"DeliveryDocument"`
 	HeaderDeliveryStatus *string `json:"HeaderDeliveryStatus"`
 	IsMarkedForDeletion  *bool   `json:"IsMarkedForDeletion"`
-	Items                *[]Item `json:"Items"`
 }
 
 type Item struct {
 	DeliveryDocument     int     `json:"DeliveryDocument"`
 	DeliveryDocumentItem int     `json:"DeliveryDocumentItem"`
-	ItemDeliveryStatus   *string `json:"ItemDeliveryStatus"`
 	IsMarkedForDeletion  *bool   `json:"IsMarkedForDeletion"`
 }

@@ -15,6 +15,5 @@
 	"api_schema": "DPFMDeliveryDocumentDeletes",
 	"accepter": [
 		"Header"
-	],
-	"deleted": false
+	]
 }
